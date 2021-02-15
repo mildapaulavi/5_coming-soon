@@ -10,6 +10,7 @@ class Forms {
         this.addEvents();
     }
 
+
     findAllForms() {
         const forms = document.querySelectorAll('.form');
         this.forms = [...forms];
