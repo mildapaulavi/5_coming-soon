@@ -6,8 +6,13 @@
 /* hero section */
 
 .hero {
+    min-height: 100vh;
     text-align: center;
     padding-bottom: 30px;
+    background-image: url(../img/background.png);
+    background-size: cover;
+    background-position: center bottom;
+    background-attachment: fixed;
 }
 
 .hero .logo {
@@ -71,7 +76,8 @@ main .block-title {
 }
 main .block-description {
     margin-bottom: 30px;
-    font-size: 18px;
+    font-size: 16px;
+    line-height: 24px;
 }
 main .block-description > a {
     color: var(--secondary-color);
@@ -113,6 +119,15 @@ footer.container {
     color: #fff9;
     padding-top: 0;
 }
+.container > .back-to-top {
+    position: relative;
+}
+.container > .back-to-top > .btn {
+    position: absolute;
+    top: -25px;
+    right: -11px;
+}
+
 .container > .socials {
     padding: 15px 0;
     border-bottom: 2px solid #fff;
@@ -172,7 +187,10 @@ footer > .short-row > p {
     width: 100%;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 680px) {
+    .container > .back-to-top {
+    display: none;
+}
     .bottom-texts {
         flex-direction: column;
     }
